@@ -1,0 +1,35 @@
+TITLE: Structural and Functional Analysis of Voltage-Gated Ion Channels: Molecular Basis of Electromechanical Coupling
+
+ABSTRACT:
+Voltage-gated ion channels are membrane proteins essential for electrical signaling in excitable tissues. These channels undergo conformational changes in response to membrane potential changes, leading to selective ion permeation. Understanding the molecular mechanisms of voltage sensing and channel gating remains crucial for comprehending neuronal function and for therapeutic targeting in channelopathies. This study combines cryo-electron microscopy (cryo-EM), molecular dynamics simulations, and electrophysiological recordings to elucidate the gating mechanism of the bacterial voltage-gated sodium channel (NavAb) and its mammalian homolog. We determined cryo-EM structures of NavAb in resting and activated states at 3.2 Å and 3.5 Å resolution, respectively. Key findings include identification of previously unobserved intermediate conformational states accessed during voltage-dependent gating and demonstration that the voltage sensor domain undergoes a helical screw rotation of approximately 60 degrees. Electrophysiological measurements confirm that mutations predicted to stabilize the activated state indeed accelerate channel opening, validating our structural interpretations. All-atom molecular dynamics simulations reveal the energetic basis for voltage sensing through changes in interaction networks between charged residues in the voltage sensor domain.
+
+INTRODUCTION:
+Ion channels represent one of the largest protein families and are fundamental to cellular signaling in neurons, muscle, heart, and secretory tissues. Voltage-gated ion channels open and close in response to changes in membrane potential, creating the electrical signals underlying nerve and muscle function. Despite their biological importance, the atomic-level mechanisms by which these proteins sense voltage and couple this sensing to channel opening have only recently become accessible to experimental determination.
+
+Traditional voltage clamp electrophysiology has provided extensive kinetic and biophysical characterization of these channels, showing that gating involves multiple kinetically distinct states and voltage-dependent conformational changes. X-ray crystallography contributed initial structural insights, but the inherent flexibility of ion channels made high-resolution structures challenging. Recent advances in cryo-EM now enable determination of structures of large, dynamic protein complexes at near-atomic resolution, opening new possibilities for understanding gating mechanisms.
+
+METHODS:
+We expressed bacterial NavAb channel in E. coli, purified solubilized channels, and embedded them in lipid nanodiscs to maintain native bilayer environment. Cryo-EM grids were prepared at different membrane potentials (resting: 0 mV; activated: +150 mV) achieved through electrochemical gradients across lipid bilayer barriers. Data collection involved 300 kV FEI Titan Krios microscope with Gatan K3 detector. Refinement to 3.2 Å was achieved through focused classification of voltage sensor domain, revealing multiple conformational states.
+
+All-atom MD simulations were performed in explicit membrane and solvent using AMBER force field. Initial structures derived from cryo-EM models. Simulations examined transitions between resting and activated states, applying biasing potentials to enhance sampling of rare transitions (adaptive biasing force calculations).
+
+Electrophysiology employed whole-cell patch clamp recording from HEK293 cells transiently expressing NavAb constructs with designed mutations predicted to favor activated state.
+
+RESULTS:
+Cryo-EM structure of resting NavAb revealed four voltage sensor domains arranged around a central pore domain. The voltage sensor is a transmembrane module formed by helices S1-S4, with positively charged residues (Arg213, Arg216, Arg219) strategically positioned to sense membrane potential. In the resting state, these positive charges are positioned deep within the lipid bilayer, where they interact with negatively charged residues on adjacent helices.
+
+The activated state structure showed dramatic reorganization: the voltage sensor rotated approximately 60 degrees about the membrane normal axis (helical screw motion), positioning positively charged residues closer to the extracellular surface. This repositioning involves breaking of several salt bridges and formation of new interactions with conserved negatively charged residues on the channel structure.
+
+Notably, we identified three intermediate states through 3D classification of cryo-EM particles, showing stepwise repositioning of the voltage sensor at intermediate membrane potentials (+50 mV and +100 mV). These intermediates reveal that gating proceeds through sequential substeps rather than a single concerted transition.
+
+The pore domain undergoes coordinated conformations with voltage sensor activation. In the resting state, the pore forms a constricted structure with hydrated Na+ partially stripped of its hydration shell, effectively occluding ion flow. In the activated state, conformational rearrangement of pore-lining helices creates a wider pore permitting rapid Na+ transit (permeation rate ~10^6 ions per second).
+
+Electrophysiology confirmed structural predictions. Mutations designed to stabilize the activated state (E222A to disrupt a salt bridge) showed 3.5-fold acceleration of channel opening kinetics, while mutations predicted to favor resting state (S220K to reinforce a salt bridge) showed slowed opening.
+
+MD simulations revealed the energetic basis for voltage sensing: the transition from resting to activated state involves ~+8 kcal/mol unfavorable work associated with moving positive charges outward against the electric field, but this is compensated by ~-10 kcal/mol favorable work from breaking unfavorable interactions and forming more favorable ones at higher membrane voltages. The net result is voltage-dependent free energy landscape that favors the activated state at depolarized potentials.
+
+DISCUSSION:
+The integrated structural, computational, and functional data provide mechanistic understanding of voltage sensing in ion channels. The helical screw motion identified in cryo-EM structures represents the primary movement during voltage sensing, in agreement with predictions from earlier Rosetta stone molecular mechanics models but now with atomic resolution. The identification of intermediate states suggests that gating may involve rate-limiting steps beyond the final activated state transition, possibly reflecting slower coupling to pore opening.
+
+CONCLUSION:
+This work establishes atomic-level understanding of how ion channels sense membrane potential and couple this sensing to channel opening. The voltage sensor employs electrostatic interactions as the physical basis for detecting transmembrane electric fields. These insights provide framework for understanding disease-associated channelopathies and designing specific pharmacological modulators for therapeutic applications.
