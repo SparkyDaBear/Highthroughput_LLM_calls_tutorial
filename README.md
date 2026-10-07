@@ -2,7 +2,7 @@
 
 A beginner-friendly guide to calling Large Language Models (LLMs) via the OpenAI Python module, supporting both **OpenAI** and **OpenRouter** APIs. This tutorial is designed for biophysics students learning to extract scientific insights from research papers using AI-powered analysis.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - Set up API keys securely using environment variables
 - Call OpenAI's GPT-4 mini model for efficient analysis
@@ -10,7 +10,7 @@ A beginner-friendly guide to calling Large Language Models (LLMs) via the OpenAI
 - Apply prompt engineering best practices for scientific text analysis
 - Analyze biophysics papers to extract: motivations, hypotheses, experiments, and results
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - API keys from:
@@ -18,7 +18,7 @@ A beginner-friendly guide to calling Large Language Models (LLMs) via the OpenAI
   - **OpenRouter** (https://openrouter.ai/keys)
 - Basic familiarity with terminal/command line
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Step 1: Set Up Your Environment
 
@@ -75,7 +75,7 @@ python src/llm_paper_analyzer.py --provider openrouter
 python src/llm_paper_analyzer.py -p openai
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -96,7 +96,7 @@ python src/llm_paper_analyzer.py -p openai
 └── results/                           # Output directory for analysis results
 ```
 
-## 📚 About the Example Papers
+## About the Example Papers
 
 The tutorial includes excerpts from open-access biophysics research papers covering:
 1. **Protein Dynamics & Folding** - Understanding how proteins move and fold
@@ -105,7 +105,7 @@ The tutorial includes excerpts from open-access biophysics research papers cover
 
 Each paper excerpt includes abstract, introduction, and key experimental sections—perfect for practicing LLM-based analysis.
 
-## 🧪 How to Run Your Own Analysis
+## How to Run Your Own Analysis
 
 ### Using the Unified Script:
 
@@ -121,7 +121,7 @@ python src/llm_paper_analyzer.py --provider openrouter
 
 Internally, the script has separate `analyze_paper_with_openai()` and `analyze_paper_with_openrouter()` functions, but they share the same data loading, prompting, and result saving logic.
 
-## 💡 Prompt Engineering Tips
+## Prompt Engineering Tips
 
 The analysis prompt in `examples/prompts/analysis_prompt.txt` demonstrates:
 
@@ -133,7 +133,7 @@ The analysis prompt in `examples/prompts/analysis_prompt.txt` demonstrates:
 
 Better prompts → Better results. Experiment and iterate!
 
-## 🔑 Model Comparison
+## Model Comparison
 
 | Aspect | OpenAI (GPT-4 mini) | OpenRouter (Gemma) |
 |--------|-----|---------|
@@ -142,7 +142,7 @@ Better prompts → Better results. Experiment and iterate!
 | **Quality** | Excellent | Good |
 | **Best For** | Complex analysis, nuanced tasks | Quick analysis, cost-sensitive work |
 
-## ⚠️ Important Security Notes
+## Important Security Notes
 
 - **Never commit API keys** to version control
 - The `.env` file is in `.gitignore` to protect your keys
@@ -150,7 +150,7 @@ Better prompts → Better results. Experiment and iterate!
 - Consider rotating API keys periodically
 - Monitor your API usage to avoid unexpected charges
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Authentication failed" error
 - Verify your API key is correct (copy directly from provider dashboard)
@@ -166,7 +166,7 @@ Better prompts → Better results. Experiment and iterate!
 - Ensure you installed dependencies: `pip install -r requirements.txt`
 - Verify you're using the correct Python environment
 
-## 📖 Next Steps
+## Next Steps
 
 1. **Modify the prompts** - Try different analysis frameworks
 2. **Add more papers** - Test on your own research materials
@@ -174,20 +174,14 @@ Better prompts → Better results. Experiment and iterate!
 4. **Build batch processing** - Analyze many papers at once
 5. **Integrate into workflows** - Use in your own projects
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [OpenAI Documentation](https://platform.openai.com/docs)
 - [OpenRouter Documentation](https://openrouter.ai/docs)
 - [OpenAI Python Library](https://github.com/openai/openai-python)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
-## 📞 Support
-
-For issues with:
-- **API Keys** → Contact OpenAI or OpenRouter support
-- **Python code** → Check the setup_instructions.md file
-- **Prompts** → Try rephrasing or providing more examples
 
 ---
 
-**Happy coding! Remember: the quality of your prompt determines the quality of your results.** 🚀
+**Happy coding! Remember: the quality of your prompt determines the quality of your results.** 
